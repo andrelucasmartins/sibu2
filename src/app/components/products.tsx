@@ -91,8 +91,10 @@ export const Products = (props: ProductsProps) => {
                   <p>{product.units}</p>
                 </h5>
               </a>
-              <div className="mb-5 mt-2.5 flex flex-col items-center">
-                <img src={product.img} alt={`Sibutra2 ${product.units}`} />
+              <div className="flex flex-col items-center">
+                <a href={product.url}>
+                  <img src={product.img} alt={`Sibutra2 ${product.units}`} />
+                </a>
                 <span className="ml-3 mr-2 rounded bg-cyan-100 px-2.5 py-0.5 text-xs font-semibold text-cyan-800 dark:bg-cyan-200 dark:text-cyan-800">
                   <p>
                     de{" "}
@@ -100,19 +102,48 @@ export const Products = (props: ProductsProps) => {
                   </p>
                 </span>
               </div>
-              <div className="flex flex-col items-center justify-center">
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                  $599
+              <div className="flex flex-col items-center justify-center space-y-4">
+                <span className="text-3xl font-bold text-gray-900 dark:text-white flex flex-row gap-x-1">
+                  <div className="text-xs flex flex-col items-end justify-center">
+                    <span>12X</span>
+                    <span>R$</span>
+                  </div>
+                  <div>{product.price}</div>
                 </span>
                 <a
                   className="rounded-full bg-green-500 px-5 py-2.5 text-center text-xs font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-                  href="#"
+                  href={product.url}
                 >
                   <p>EU QUERO SIBUTRAN 2</p>
                 </a>
               </div>
             </Card>
           ))}
+        </div>
+        <img src="/free2-1.png" alt="frete" className="mx-auto" />
+        <p className="text-center">
+          Esse produto possui entrega acelerada! Último lote disponível, reserve
+          seu kit!{" "}
+        </p>
+        <h3 className="text-center text-red-600 text-lg font-bold ">
+          Frete Grátis Para Todo o Brasil!
+        </h3>
+        <div className="flex flex-col justify-center items-center space-y-4">
+          <h3 className="text-2xl font-bold text-center">
+            EVITE PROTUDOS FALSIFICADOS. PIRATARIA É CRIME!!
+          </h3>
+          <p className="text-sm text-center">
+            A venda do <b>SIBUTRAN 2</b> através de qualquer outro site está{" "}
+            <b>PROIBIDA</b> e pode colocar a sua <b>SAÚDE EM RISCO</b>.
+            <br />
+            Não compre falsificações e garanta um produto de qualidade comprando
+            <b>APENAS</b> através deste site oficial.
+          </p>
+          <img
+            src="/pirataria-nao.png"
+            alt="pirataria não"
+            className="mx-auto w-2/4"
+          />
         </div>
       </div>
     </section>
