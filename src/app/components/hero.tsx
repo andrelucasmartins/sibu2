@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 interface HeroProps {}
 
 export const Hero = (props: HeroProps) => {
@@ -29,12 +31,14 @@ export const Hero = (props: HeroProps) => {
             <br />
             enérgico e se livrar da fadiga!
           </p>
-          <button
-            type="button"
-            className="my-4 text-white bg-gradient-to-bl from-emerald-500 to-emerald-700 hover:bg-emerald-400 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full sm:rounded text-sm px-5 py-2.5 text-center  text-base  max-w-[320px] w-full mx-auto"
-          >
-            Sim, eu quero um emagrecimento saudável!
-          </button>
+          <Link href="/#products" className="mx-auto">
+            <button
+              type="button"
+              className="my-4 text-white bg-gradient-to-bl from-emerald-500 to-emerald-700 hover:bg-emerald-400 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full sm:rounded text-sm px-5 py-2.5 text-center  text-base  max-w-[320px] w-full"
+            >
+              Sim, eu quero um emagrecimento saudável!
+            </button>
+          </Link>
           <img
             src="/checkout_2-1.png"
             alt="Checkout Seguro"

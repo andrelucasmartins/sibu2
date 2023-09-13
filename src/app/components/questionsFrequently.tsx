@@ -73,9 +73,7 @@ export const QuestionsFrequently = (props: QuestionsFrequentlyProps) => {
               </Accordion.Title>
 
               <Accordion.Content>
-                <p className="mb-2 text-white">
-                  <p>{question.answer}</p>
-                </p>
+                <p className="mb-2 text-white">{question.answer}</p>
               </Accordion.Content>
             </Accordion.Panel>
           ))}

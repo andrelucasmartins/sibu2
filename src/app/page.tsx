@@ -1,5 +1,6 @@
 "use client";
 
+import { CaseSuccess } from "./components/caseSuccess";
 import { Hero } from "./components/hero";
 import { Products } from "./components/products";
 import { QuestionsFrequently } from "./components/questionsFrequently";
@@ -84,6 +85,7 @@ export default function Home() {
       </article>
       <Products />
       <QuestionsFrequently />
+      <CaseSuccess />
     </main>
   );
 }

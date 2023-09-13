@@ -16,13 +16,19 @@ export function UseTermsModal() {
         show={props.openModal === "default"}
         onClose={() => props.setOpenModal(undefined)}
       >
-        <Modal.Header>Terms of Service</Modal.Header>
+        <Modal.Header>Termos de Uso</Modal.Header>
         <Modal.Body>
           <div className="space-y-6">
             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-              With less than a month to go before the European Union enacts new
-              consumer privacy laws for its citizens, companies around the world
-              are updating their terms of service agreements to comply.
+              <h2 className="text-gray-700">
+                TERMOS E CONDIÇÕES DE COMPRA E VENDA
+              </h2>
+              Considerando que a sibutran2 realiza venda de produtos e serviços
+              pela internet; Considerando o interesse do Cliente na compra dos
+              produtos oferecidos pelo sibutran2 (“Produtos”) em seus canais de
+              venda; O presente contrato tem por finalidade estabelecer as
+              condições gerais de uso e compra de produtos e serviços do cliente
+              do site sibutran2.
             </p>
             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
               The European Union’s General Data Protection Regulation (G.D.P.R.)

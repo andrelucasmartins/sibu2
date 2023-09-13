@@ -1,9 +1,7 @@
-"use client";
-
-import { Navbar } from "flowbite-react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Footer } from "./components/footer";
+import { NavbarMain } from "./components/navbarMain";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,15 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scroll-smooth transition duration-150 ease-in-out"
+    >
       <body className={inter.className}>
-        <Navbar
-          fluid={true}
-          rounded={true}
-          className="bg-red-900 flex items-center justify-center text-2xl font-bold text-white"
-        >
-          Sibutran2
-        </Navbar>
+        <NavbarMain />
         {children}
         <Footer />
       </body>
