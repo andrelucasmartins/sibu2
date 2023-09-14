@@ -1,6 +1,90 @@
 "use client";
 
+import { v4 as uuidv4 } from "uuid";
+
 interface FooterProps {}
+
+const PRIVACY_POLICY = [
+  {
+    id: uuidv4(),
+    title: "TERMOS DA POLITICA DE PRIVACIDADE",
+    description:
+      "Todas as suas informações pessoais recolhidas, serão usadas para o ajudar a tornar a sua visita no nosso site o mais produtiva e agradável possível. A garantia da confidencialidade dos dados pessoais dos utilizadores do nosso site é importante para o sibutran2. Todas as informações pessoais relativas a membros, assinantes, clientes ou visitantes que usem o sibutran2 serão tratadas em concordância com a Lei da Proteção de Dados Pessoais de 26 de outubro de 1998 (Lei n.º 67/98). A informação pessoal recolhida pode incluir o seu nome, e-mail, número de telefone e/ou telemóvel, morada, data de nascimento e/ou outros. O uso do sibutran2 pressupõe a aceitação deste Acordo de privacidade. A equipe do sibutran2 reserva-se ao direito de alterar este acordo sem aviso prévio. Deste modo, recomendamos que consulte a nossa política de privacidade com regularidade de forma a estar sempre atualizado.",
+  },
+  {
+    id: uuidv4(),
+    title: "OS ANÚNCIOS",
+    description:
+      "Tal como outros websites, coletamos e utilizamos informação contida nos anúncios. A informação contida nos anúncios, inclui o seu endereço IP (Internet Protocol), o seu ISP (Internet Service Provider, como o Sapo, Clix, ou outro), o browser que utilizou ao visitar o nosso website (como o Internet Explorer ou o Firefox), o tempo da sua visita e que páginas visitou dentro do nosso website.",
+  },
+  {
+    id: uuidv4(),
+    title: "OS COOKIES E WEB BEACONS",
+    description:
+      "Utilizamos cookies para armazenar informação, tais como as suas preferências pessoas quando visita o nosso website. Isto poderá incluir um simples popup, ou uma ligação em vários serviços que providenciamos, tais como fóruns. Em adição também utilizamos publicidade de terceiros no nosso website para suportar os custos de manutenção. Alguns destes publicitários, poderão utilizar tecnologias como os cookies e/ou web beacons quando publicitam no nosso website, o que fará com que esses publicitários (como o Google através do Google AdSense) também recebam a sua informação pessoal, como o endereço IP, o seu ISP, o seu browser, etc. Esta função é geralmente utilizada para geotargeting (mostrar publicidade de Lisboa apenas aos leitores oriundos de Lisboa por ex.) ou apresentar publicidade direcionada a um tipo de utilizador (como mostrar publicidade de restaurante a um utilizador que visita sites de culinária regularmente, por ex.). Você detém o poder de desligar os seus cookies, nas opções do seu browser, ou efetuando alterações nas ferramentas de programas Anti-Vírus, como o Norton Internet Security. No entanto, isso poderá alterar a forma como interage com o nosso website, ou outros websites. Isso poderá afetar ou não permitir que faça logins em programas, sites ou fóruns da nossa e de outras redes.",
+  },
+  {
+    id: uuidv4(),
+    title: "LIGAÇÕES A SITES DE TERCEIROS",
+    description:
+      "O sibutran2 – composto natural para emagrecimento possui ligações para outros sites, os quais, a nosso ver, podem conter informações / ferramentas úteis para os nossos visitantes. A nossa política de privacidade não é aplicada a sites de terceiros, pelo que, caso visite outro site a partir do nosso deverá ler a politica de privacidade do mesmo. Não nos responsabilizamos pela política de privacidade ou conteúdo presente nesses mesmos sites.",
+  },
+];
+
+const TERMS = [
+  {
+    id: 1,
+    title: "TERMOS E CONDIÇÕES DE COMPRA E VENDA",
+    description:
+      "Considerando que a sibutran2 realiza venda de produtos e serviços pela internet; Considerando o interesse do Cliente na compra dos produtos oferecidos pelo sibutran2 (“Produtos”) em seus canais de venda; O presente contrato tem por finalidade estabelecer as condições gerais de uso e compra de produtos e serviços do cliente do site sibutran2.",
+  },
+  {
+    id: 2,
+    title: "I. Confidencialidade:",
+    description:
+      "É de responsabilidade sibutran2 a preservação da confidencialidade de todos os dados e informações fornecidos pelo Cliente no processo de compra. A segurança do site é auditada diariamente e garantida contra a ação de hackers, através do selo “Site Blindado”.",
+  },
+  {
+    id: 3,
+    title: "II. Serviço de Atendimento ao Cliente (SAC):",
+    description:
+      "O cliente dispõe desse serviço para sanar suas dúvidas, solucionar eventuais solicitações ou reclamações a respeito do seu pedido ou de qualquer conteúdo disponibilizado no site. O SAC poderá ser acionado por meio de telefone ou de formulário do site.",
+  },
+  {
+    id: 4,
+    title: "III. Política de entrega:",
+    description: `
+    o prazo para entrega dos Produtos é informado durante o procedimento de compra, contabilizado em dias úteis. As entregas dos Produtos são realizadas de segunda a sexta-feira, das 8h às 22h. Excepcionalmente, algumas entregas de Produtos podem ocorrer aos sábados, domingos e feriados.
+
+III.I – A conferência da adequação das dimensões do produto é de responsabilidade do Cliente, que deverá se assegurar de que estas estão de acordo com os limites espaciais dos elevadores, portas e corredores do local da entrega. Não será realizada a montagem ou desmontagem do produto, transporte pela escada e/ou portas e janelas, ou içamento das entregas.
+
+III.II – Serão realizadas até três tentativas de entrega no local informado, em dias alternados, com intervalo de até 48h entre uma entrega e outra. É indispensável que, no endereço solicitado, haja uma pessoa autorizada pelo comprador, maior de 18 anos, e portando documento de identificação para receber a mercadoria e assinar o protocolo de entrega. Se houver três tentativas de entrega sem sucesso, o pedido retornará para o Centro de Distribuição do sibutran2.
+
+III.III – Após a finalização do pedido não é possível alterar a forma de pagamento e/ou endereço de entrega, solicitar adiantamento ou, ainda, prioridade da entrega.
+
+III.IV – O prazo de entrega informado durante o procedimento de compra do Produto leva em consideração o estoque, a região, o processo de emissão da nota fiscal e o tempo de preparo do produto. A cada atualização no status de entrega do pedido, o sistema do sibutran2 envia, automaticamente, e-mails de alerta para o Cliente.
+
+III.V – O valor do frete da entrega é calculado com base no local de entrega, peso e dimensões do Produto.
+
+III.VI – O sibutran2 não autoriza a transportadora a: entrar no domicílio; entregar por meios alternativos (exemplo: içar produto por janela); realizar instalação ou manutenção de produtos; abrir a embalagem do produto; realizar entrega em endereço diferente do que consta no sibutran2; realizar entrega a menor de idade ou sem documento de identificação.
+
+III.VII – O sibutran2 não se responsabiliza pela retenção de mercadorias na SEFAZ quando esta se dever exclusivamente a pendências do cliente, sendo, portanto, necessário seu comparecimento no posto fiscal para que a mercadoria seja liberada, tendo em vista que nestes casos as informações referentes a liberações e pagamentos só são passadas aos interessados.
+    `,
+  },
+  {
+    id: 5,
+    title: "IV. Direito de arrependimento:",
+    description: `Ao Cliente será facultado o exercício do direito de arrependimento da compra, com a finalidade de devolução do Produto, hipótese na qual deverão ser observadas as seguintes condições: o prazo de desistência da compra do produto é de até 7 (sete) dias corridos, a contar da data do recebimento; em caso de devolução, o produto deverá ser devolvido à sibutran2 na embalagem original, acompanhado do DANFE (Documento Auxiliar da Nota Fiscal Eletrônica), do manual e de todos os seus acessórios.
+
+IV.I – O Cliente deverá solicitar a devolução através do Serviço de Atendimento ao Cliente (SAC) ou diretamente no Painel de Controle, no tópico “cancelar pedido”. As despesas decorrentes de coleta ou postagem do Produto serão custeadas pelo sibutran2.
+
+IV.II – Após a chegada do produto ao Centro de Distribuição, o sibutran2 verificará se as condições supra citadas foram atendidas. Em caso afirmativo, providenciará a restituição no valor total da compra.
+
+IV.III – Em compras com cartão de crédito a administradora do cartão será notificada e o estorno ocorrerá na fatura seguinte ou na posterior, de uma só vez, seja qual for o número de parcelas utilizado na compra. O prazo de ressarcimento e, ainda, a cobrança das parcelas remanescentes após o estorno integral do valor do Produto no cartão de crédito do Cliente realizado pelo sibutran2, é de responsabilidade da administradora do cartão. Na hipótese de cobrança de parcelas futuras pela administradora do cartão, o Cliente não será onerado, vez que o sibutran2, conforme mencionado acima, realiza o estorno do valor integral do Produto em uma única vez, sendo o crédito referente ao estorno concedido integralmente pela administradora do cartão na fatura de cobrança subsequente ao mês do cancelamento.
+
+IV.IV – Em compras pagas com boleto bancário ou débito em conta, a restituição será efetuada por meio de depósito bancário, em até 10 (dez) dias úteis, somente na conta corrente do(a) comprador(a), que deve ser individual. É necessário que o CPF do titular da conta corrente.`,
+  },
+];
 
 import Link from "next/link";
 import { FaExpeditedssl, FaWhatsapp } from "react-icons/fa6";
@@ -68,12 +152,22 @@ export function Footer(props: FooterProps) {
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Política de Privacidade
-                </a>
+                <Modal.UseTerms
+                  list={PRIVACY_POLICY}
+                  title="Política de Privacidade"
+                  id="privacy_politic"
+                >
+                  <Modal.ButtonAction id="privacy_politic">
+                    Política de Privacidade
+                  </Modal.ButtonAction>
+                </Modal.UseTerms>
               </li>
               <li className="mb-4">
-                <Modal.UseTerms />
+                <Modal.UseTerms list={TERMS} title="Termos de Uso" id="terms">
+                  <Modal.ButtonAction id="terms">
+                    Termos de Uso
+                  </Modal.ButtonAction>
+                </Modal.UseTerms>
               </li>
             </ul>
           </div>

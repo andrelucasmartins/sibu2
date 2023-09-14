@@ -1,3 +1,4 @@
+import { TermsModalContextProvider } from "@/contexts/TermsContext";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Footer } from "./components/footer";
@@ -24,7 +25,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavbarMain />
         {children}
-        <Footer />
+        <TermsModalContextProvider>
+          <Footer />
+        </TermsModalContextProvider>
       </body>
     </html>
   );
