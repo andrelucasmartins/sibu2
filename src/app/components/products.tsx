@@ -62,7 +62,7 @@ const PRODUCTS = [
 ];
 export const Products = (props: ProductsProps) => {
   return (
-    <section className="bg-white text-gray-900 py-10" id="products">
+    <section className="bg-white text-gray-900 py-10 element" id="products">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-6">
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">
           <span className="text-red-600 mr-2">ECONOMIZE</span>

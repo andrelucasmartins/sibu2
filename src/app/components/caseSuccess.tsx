@@ -47,7 +47,7 @@ export const CaseSuccess = (props: CaseSuccessProps) => {
               spaceBetween: 10,
             },
           }}
-          onSlideChange={() => console.log("slide change")}
+          // onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           className="mySwiper"
         >

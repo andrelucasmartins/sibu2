@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 interface HeroProps {}
 
@@ -31,14 +31,17 @@ export const Hero = (props: HeroProps) => {
             <br />
             enérgico e se livrar da fadiga!
           </p>
-          <Link href="/#products" className="mx-auto">
-            <button
-              type="button"
-              className="my-4 text-white bg-gradient-to-bl from-emerald-500 to-emerald-700 hover:bg-emerald-400 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full sm:rounded text-sm px-5 py-2.5 text-center  text-base  max-w-[320px] w-full"
-            >
-              Sim, eu quero um emagrecimento saudável!
-            </button>
+
+          <Link
+            className="my-4 text-white bg-gradient-to-bl from-emerald-500 to-emerald-700 hover:bg-emerald-400 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full sm:rounded  px-10 py-5 text-center   w-full"
+            to="products"
+            spy
+            smooth
+            duration={500}
+          >
+            Sim, eu quero um emagrecimento saudável!
           </Link>
+
           <img
             src="/checkout_2-1.png"
             alt="Checkout Seguro"
