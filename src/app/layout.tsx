@@ -1,3 +1,4 @@
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { TermsModalContextProvider } from "@/contexts/TermsContext";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -26,6 +27,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-CTPR42M0PN" />
       <body className={inter.className}>
         <NavbarMain />
         {children}
