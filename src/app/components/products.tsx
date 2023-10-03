@@ -1,6 +1,7 @@
 "use client";
 
 import { Badge, Card } from "flowbite-react";
+import Image from "next/image";
 import { PRODUCTS } from "../data/products";
 
 interface ProductsProps {}
@@ -39,7 +40,12 @@ export const Products = (props: ProductsProps) => {
               </a>
               <div className="flex flex-col items-center">
                 <a href={product.url}>
-                  <img src={product.img} alt={`Sibutra2 ${product.units}`} />
+                  <Image
+                    src={product.img}
+                    alt={`Sibutra2 ${product.units}`}
+                    width={350}
+                    height={350}
+                  />
                 </a>
                 <span className="ml-3 mr-2 rounded bg-red-100 px-2.5 py-0.5 text-xs font-semibold text-red-800 dark:bg-red-200 dark:text-red-800">
                   <p>
@@ -66,7 +72,13 @@ export const Products = (props: ProductsProps) => {
             </Card>
           ))}
         </div>
-        <img src="/free2-1.png" alt="frete" className="mx-auto" />
+        <Image
+          src="/free2-1.png"
+          alt="frete"
+          className="mx-auto"
+          width={100}
+          height={100}
+        />
         <p className="text-center">
           Esse produto possui entrega acelerada! Último lote disponível, reserve
           seu kit!{" "}
