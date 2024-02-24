@@ -38,6 +38,7 @@ export const Hero = (props: HeroProps) => {
             spy
             smooth
             duration={500}
+            name="Sim, eu quero um emagrecimento saudável!"
           >
             Sim, eu quero um emagrecimento saudável!
           </Link>

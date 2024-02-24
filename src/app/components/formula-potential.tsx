@@ -73,6 +73,7 @@ export const FormulaPotential = (props: FormulaPotentialProps) => {
               smooth
               spy
               duration={500}
+              name="Comprar Sibutran2 Garantia De 30 Dias Ou Seu Dinheiro De Volta"
             >
               <div className="flex flex-col">
                 <h2 className="text-white">Comprar Sibutran2</h2>

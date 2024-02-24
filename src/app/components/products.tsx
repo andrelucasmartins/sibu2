@@ -26,7 +26,7 @@ export const Products = (props: ProductsProps) => {
               key={product.id}
               className="flex flex-col justify-center items-center"
             >
-              <div className="text-center py-2 text-white uppercase min-w-full bg-green-500">
+              <div className="text-center py-2 text-white font-semibold uppercase min-w-full bg-green-500">
                 {product.desc}
               </div>
               <Badge className="text-white bg-black max-w-fit mx-auto">
