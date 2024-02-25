@@ -6,9 +6,6 @@ const nextConfig = {
   compiler: {
     removeConsole: true,
   },
-  experimental: {
-    webVitalsAttribution: ["CLS", "LCP"]
-  },
   output: "export",
   images: { 
     unoptimized: true,

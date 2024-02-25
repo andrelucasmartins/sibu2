@@ -26,7 +26,7 @@ export const Products = (props: ProductsProps) => {
               key={product.id}
               className="flex flex-col justify-center items-center"
             >
-              <div className="text-center py-2 text-white font-semibold uppercase min-w-full bg-green-500">
+              <div className="text-center py-2 text-white font-semibold uppercase min-w-full bg-green-600">
                 {product.desc}
               </div>
               <Badge className="text-white bg-black max-w-fit mx-auto">
@@ -36,7 +36,7 @@ export const Products = (props: ProductsProps) => {
                 href={product.url}
                 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white text-center -mb-4"
               >
-                <h5>{product.units}</h5>
+                <span className="text-xl font-bold">{product.units}</span>
               </a>
               <div className="flex flex-col items-center">
                 <a href={product.url}>
@@ -63,7 +63,7 @@ export const Products = (props: ProductsProps) => {
                   <div>{product.price}</div>
                 </span>
                 <a
-                  className="rounded-full bg-green-500 px-5 py-2.5 text-center text-xs font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                  className="rounded-full bg-green-600 px-5 py-2.5 text-center text-xs font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
                   href={product.url}
                 >
                   <p>EU QUERO SIBUTRAN 2</p>
