@@ -52,23 +52,23 @@ export const CaseSuccess = (props: CaseSuccessProps) => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img alt="..." src="/transferir-3.png" />
+            <img alt="..." src="/transferir-3.webp" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img alt="..." src="/transferir-4.png" />
+            <img alt="..." src="/transferir-4.webp" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img alt="..." src="/transferir-6.png" />
+            <img alt="..." src="/transferir-6.webp" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img alt="..." src="/sibutran2-newdepp-10.png" />
+            <img alt="..." src="/sibutran2-newdepp-10.webp" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img alt="..." src="/sibutran2-newdepp-22.png" />
+            <img alt="..." src="/sibutran2-newdepp-22.webp" />
           </SwiperSlide>
         </Swiper>
         {/* <Carousel>

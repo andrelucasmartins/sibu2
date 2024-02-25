@@ -125,7 +125,7 @@ export function Footer(props: FooterProps) {
               </li>
               <li className="mb-4 flex items-center justify-center">
                 <img
-                  src="/SELO-DE-GARANTIA-300x300-1.png"
+                  src="/SELO-DE-GARANTIA-300x300-1.webp"
                   alt="SELO DE GARANTIA"
                   className="max-w-[145px]"
                 />

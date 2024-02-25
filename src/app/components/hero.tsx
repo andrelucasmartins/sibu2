@@ -13,7 +13,7 @@ export const Hero = (props: HeroProps) => {
             O melhor redutor de medidas!
           </h1>
           <img
-            src="/mockup-sibutran2-oficial-flag-drt-16-05-22-768x624.png"
+            src="/mockup-sibutran2-oficial-flag-drt-16-05-22-768x624.webp"
             alt="Sibutran2"
             className="w-full my-6 max-w-[640px] mx-auto"
           />
@@ -44,7 +44,7 @@ export const Hero = (props: HeroProps) => {
           </Link>
 
           <img
-            src="/checkout_2-1.png"
+            src="/checkout_2-1.webp"
             alt="Checkout Seguro"
             className="my-6 w-full max-w-[340px] mx-auto"
           />

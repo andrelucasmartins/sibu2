@@ -7,7 +7,7 @@ export const PRODUCTS = [
     fromPrice: "899,40",
     parc: "37,14",
     price: "369,90",
-    img: "/KIT-6-1.png",
+    img: "/KIT-6-1.webp",
     url: "http://mon.net.br/2sa02n",
   },
   {
@@ -18,7 +18,7 @@ export const PRODUCTS = [
     fromPrice: "599,60",
     parc: "325,09",
     price: "249,90",
-    img: "/KIT-4-1.png",
+    img: "/KIT-4-1.webp",
     url: "http://mon.net.br/2sa02e",
   },
   {
@@ -29,7 +29,7 @@ export const PRODUCTS = [
     fromPrice: "449,70",
     parc: "19,09",
     price: "189,90",
-    img: "/KIT-3-1.png",
+    img: "/KIT-3-1.webp",
     url: "http://mon.net.br/2s9zzn",
   },
   {
@@ -40,7 +40,7 @@ export const PRODUCTS = [
     fromPrice: "299,80",
     parc: "16,05",
     price: "159,90",
-    img: "/KIT-2-1.png",
+    img: "/KIT-2-1.webp",
     url: "http://mon.net.br/2s9zzm",
   },
   {
@@ -51,7 +51,7 @@ export const PRODUCTS = [
     fromPrice: "149,90",
     parc: "13,04",
     price: "129,90",
-    img: "/KIT-1-1.png",
+    img: "/KIT-1-1.webp",
     url: "http://mon.net.br/2s9zzk",
   },
 ];

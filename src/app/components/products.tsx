@@ -73,7 +73,7 @@ export const Products = (props: ProductsProps) => {
           ))}
         </div>
         <Image
-          src="/free2-1.png"
+          src="/free2-1.webp"
           alt="frete"
           className="mx-auto"
           width={100}
@@ -98,7 +98,7 @@ export const Products = (props: ProductsProps) => {
             <b>APENAS</b> através deste site oficial.
           </p>
           <img
-            src="/pirataria-nao.png"
+            src="/pirataria-nao.webp"
             alt="pirataria não"
             className="mx-auto w-2/4"
           />

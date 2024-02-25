@@ -84,7 +84,7 @@ export const FormulaPotential = (props: FormulaPotentialProps) => {
             </Link>
           </div>
           <img
-            src="/checkout_2-1.png"
+            src="/checkout_2-1.webp"
             alt="Checkout Seguro"
             className="my-6 w-full max-w-[340px] mx-auto"
           />
