@@ -83,9 +83,9 @@ export const Products = (props: ProductsProps) => {
           Esse produto possui entrega acelerada! Último lote disponível, reserve
           seu kit!{" "}
         </p>
-        <h3 className="text-center text-red-600 text-lg font-bold ">
+        <p className="text-center text-red-600 text-lg font-bold ">
           Frete Grátis Para Todo o Brasil!
-        </h3>
+        </p>
         <div className="flex flex-col justify-center items-center space-y-4">
           <h3 className="text-2xl font-bold text-center">
             EVITE PROTUDOS FALSIFICADOS. PIRATARIA É CRIME!!
