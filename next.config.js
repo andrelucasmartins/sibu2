@@ -2,6 +2,13 @@
 const nextConfig = {
   swcMinify: true,
   reactStrictMode: true,
+  compress: true,
+  compiler: {
+    removeConsole: true,
+  },
+  experimental: {
+    webVitalsAttribution: ["CLS", "LCP"]
+  },
   output: "export",
   images: { 
     unoptimized: true,
