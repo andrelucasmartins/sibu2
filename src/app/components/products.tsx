@@ -87,9 +87,9 @@ export const Products = (props: ProductsProps) => {
           Frete Grátis Para Todo o Brasil!
         </p>
         <div className="flex flex-col justify-center items-center space-y-4">
-          <h3 className="text-2xl font-bold text-center">
+          <h1 className="text-2xl font-bold text-center">
             EVITE PROTUDOS FALSIFICADOS. PIRATARIA É CRIME!!
-          </h3>
+          </h1>
           <p className="text-sm text-center">
             A venda do <b>SIBUTRAN 2</b> através de qualquer outro site está{" "}
             <b>PROIBIDA</b> e pode colocar a sua <b>SAÚDE EM RISCO</b>.
