@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Sibutran 2 - Monetizze - Sibutran 2 Cápsulas | AE Digi Solutions",
   description:
     "Mais do que um potente emagrecedor, Sibutran 2 é o auxiliador da sua saúde.",
+  verification: {
+    google: "psTI9M2KFhTJ2Yghx7YsQOQHx1tjLH-pSnqXDpibn8M",
+  },
 };
 
 export default function RootLayout({
