@@ -2,12 +2,13 @@
 
 interface FooterProps {}
 
+import { Modal } from "@/components/modal";
+import { ASSURANCE } from "@/data/assurance";
+import { PRIVACY_POLICY } from "@/data/privacy-policy";
+import { TERMS } from "@/data/terms";
+import Image from "next/image";
 import Link from "next/link";
-import { FaExpeditedssl, FaWhatsapp } from "react-icons/fa6";
-import { ASSURANCE } from "../data/assurance";
-import { PRIVACY_POLICY } from "../data/privacy-policy";
-import { TERMS } from "../data/terms";
-import { Modal } from "./modal";
+import { FaExpeditedssl } from "react-icons/fa6";
 
 export function Footer(props: FooterProps) {
   return (
@@ -23,13 +24,13 @@ export function Footer(props: FooterProps) {
                 <p className="font-thin flex flex-col">
                   <span className="font-medium">Fale conosco pelo e-mail:</span>
                   sac@sibutran2.com.br <br />
-                  ou telefone: (11) 3136-0769
+                  ou telefone: (19) 99302-8888
                 </p>
               </li>
               <li className="mb-4">
                 <p className="font-thin flex flex-col">
                   <span className="font-medium">Horário de atendimento:</span>
-                  Segunda a Sexta-feira das 8h às 18hrs
+                  Segunda à Sexta-feira das 8h às 18hrs
                 </p>
               </li>
             </ul>
@@ -42,11 +43,10 @@ export function Footer(props: FooterProps) {
               <li className="mb-4">
                 <Link
                   type="button"
-                  className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-4 py-2.5 text-center  mb-2 flex flex-row gap-2 w-[210px]"
+                  className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded  px-4 py-2 text-center  mb-2 flex flex-row gap-2 w-[210px] uppercase items-center justify-center text-lg"
                   href="https://api.whatsapp.com/send?phone=5519993028888&text=Olá, sou André, gostaria de saber mais sobre o Sibutran2?"
                 >
-                  <FaWhatsapp size={20} />
-                  +55 (19) 99302-8888
+                  Whatsapp
                 </Link>
               </li>
 
@@ -65,34 +65,22 @@ export function Footer(props: FooterProps) {
               Links Úteis
             </h2>
             <ul className="text-gray-100 font-medium">
-              <li className="mb-4">
+              <li>
                 <Modal.UseTerms
                   list={ASSURANCE}
                   title="Garantia"
                   id="assurance"
-                >
-                  <Modal.ButtonAction id="assurance">
-                    Garantia
-                  </Modal.ButtonAction>
-                </Modal.UseTerms>
+                />                  
               </li>
-              <li className="mb-4">
+              <li>
                 <Modal.UseTerms
                   list={PRIVACY_POLICY}
                   title="Política de Privacidade"
                   id="privacy_politic"
-                >
-                  <Modal.ButtonAction id="privacy_politic">
-                    Política de Privacidade
-                  </Modal.ButtonAction>
-                </Modal.UseTerms>
+                />
               </li>
-              <li className="mb-4">
-                <Modal.UseTerms list={TERMS} title="Termos de Uso" id="terms">
-                  <Modal.ButtonAction id="terms">
-                    Termos de Uso
-                  </Modal.ButtonAction>
-                </Modal.UseTerms>
+              <li>
+                <Modal.UseTerms list={TERMS} title="Termos de Uso" id="terms" />                  
               </li>
             </ul>
           </div>
@@ -123,11 +111,12 @@ export function Footer(props: FooterProps) {
                   </li>
                 </ul>
               </li>
-              <li className="mb-4 flex items-center justify-center">
-                <img
-                  src="/SELO-DE-GARANTIA-300x300-1.webp"
+              <li className="mb-4 flex items-center justify-center ">
+                <Image
+                  src="/7-1.png"
                   alt="SELO DE GARANTIA"
-                  className="max-w-[145px]"
+                  width={412}
+                  height={330}
                 />
               </li>
             </ul>

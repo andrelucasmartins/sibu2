@@ -1,9 +1,9 @@
+import { Footer } from "@/components/footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { NavbarMain } from "@/components/navbarMain";
 import { TermsModalContextProvider } from "@/contexts/TermsContext";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Footer } from "./components/footer";
-import { NavbarMain } from "./components/navbarMain";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,8 +31,12 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <GoogleAnalytics GA_MEASUREMENT_ID="G-CTPR42M0PN" />
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} 'scroll-smooth transition duration-75 ease-in-out'`}
+      >
+        <div className="sr-only">
         <NavbarMain />
+        </div>
         {children}
         <TermsModalContextProvider>
           <Footer />

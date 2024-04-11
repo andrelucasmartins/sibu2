@@ -1,7 +1,21 @@
 "use client";
 import { TermsModalContext } from "@/contexts/TermsContext";
-import { Button, Modal } from "flowbite-react";
-import { ReactNode, useContext, useEffect } from "react";
+import { Fragment, ReactNode, useContext } from "react";
+
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTrigger
+} from "@/components/ui/dialog";
+
+
+import { Button } from '@/components/ui/button';
+import { ScrollArea } from "@/components/ui/scroll-area";
+
 
 interface Term {
   id: number | string;
@@ -17,20 +31,45 @@ interface UseTermsProps extends Term {
   }[];
   title: string;
   id: number | string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export function UseTermsModal({ list, title, id, children }: UseTermsProps) {
   const { props, setId } = useContext(TermsModalContext);
 
-  useEffect(() => {
-    setId(id ?? id);
-  }, [id, setId]);
+  // useEffect(() => {
+  //   setId(id ?? id);
+  // }, [id, setId]);
 
   return (
     <>
       {children}
-      <Modal
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button variant={"link"} className="text-white hover:underline">
+            {title}
+          </Button>
+        </DialogTrigger>
+        <DialogContent className="h-[400px] w-[600px]">
+          <ScrollArea className="h-full w-full rounded-md border p-4 mt-2">
+            {list?.map((term) => (
+              <Fragment key={term.id}>
+                <DialogHeader>{term.title}</DialogHeader>
+                <DialogDescription>{term.description}</DialogDescription>
+              </Fragment>
+            ))}
+          </ScrollArea>
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button >
+                Fechar
+              </Button>
+            </DialogClose>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* <Modal
         show={props.openModal === id}
         onClose={() => props.setOpenModal(undefined)}
       >
@@ -53,7 +92,7 @@ export function UseTermsModal({ list, title, id, children }: UseTermsProps) {
             Fechar
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     </>
   );
 }

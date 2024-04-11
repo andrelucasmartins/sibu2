@@ -1,9 +1,4 @@
-"use client";
-
-import { Accordion } from "flowbite-react";
-interface QuestionsFrequentlyProps {}
-
-const questions = [
+export const QUESTIONS = [
   {
     id: 1,
     question: "QUAIS SÃO OS EFEITOS DO SIBUTRAN 2 NO MEU ORGANISMO?",
@@ -52,33 +47,3 @@ const questions = [
       "Este site é 100% protegido contra recursos de má intenção. Suas informações pessoais são sigilosas segundo a nossa Política de Privacidade e a entrega é garantida! O Sibutramin é vendido diariamente para pessoas de todo o Brasil.",
   },
 ];
-
-export const QuestionsFrequently = (props: QuestionsFrequentlyProps) => {
-  return (
-    <section className="bg-red-800 text-white py-10">
-      <div className="container mx-auto max-w-[1200px] space-y-6">
-        <h1 className="text-center text-4xl font-bold">PERGUNTAS FREQUENTES</h1>
-        <p className="text-center text-xl">
-          Veja aqui as principais dúvidas sobre o Sibutran 2{" "}
-        </p>
-
-        <Accordion className="text-white border-0  ">
-          {questions?.map((question) => (
-            <Accordion.Panel
-              className="hover:bg-transparent "
-              key={question.id}
-            >
-              <Accordion.Title className="transition ease-in-out delay-150  text-white hover:bg-transparent bg-transparent focus:ring-0">
-                {question.question}
-              </Accordion.Title>
-
-              <Accordion.Content>
-                <p className="mb-2 text-white">{question.answer}</p>
-              </Accordion.Content>
-            </Accordion.Panel>
-          ))}
-        </Accordion>
-      </div>
-    </section>
-  );
-};
